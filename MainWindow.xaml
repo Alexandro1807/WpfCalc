@@ -5,8 +5,47 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfCalc"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Калькулятор" Height="450" Width="800">
+    <Grid x:Name="MainRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Grid.ColumnSpan="5" x:Name="textLabel"/>
+        <Button Content="%" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Height="62" Width="200"/>
+        <Button Content="1/x" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Height="62" Width="200"/>
+        <Button Content="7" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Height="62" Width="200"/>
+        <Button Content="4" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Height="62" Width="200"/>
+        <Button Content="1" HorizontalAlignment="Center" Grid.Row="5" VerticalAlignment="Center" Height="62" Width="200"/>
+        <Button Content="+/-" HorizontalAlignment="Center" Grid.Row="6" VerticalAlignment="Center" Height="62" Width="200"/>
+        <Button Content="CE" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Height="62" Width="200"/>
+        <Button Content="x^2" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Height="62" Width="200"/>
+        <Button Content="8" HorizontalAlignment="Center" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Height="62" Width="200"/>
+        <Button Content="5" HorizontalAlignment="Center" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Height="62" Width="200"/>
+        <Button Content="2" HorizontalAlignment="Center" Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" Height="62" Width="200"/>
+        <Button Content="0" HorizontalAlignment="Center" Grid.Row="6" Grid.Column="1" VerticalAlignment="Center" Height="62" Width="200"/>
+        <Button Content="C" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" Height="62" Width="200"/>
+        <Button Content="sqrt(x)" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" Height="62" Width="200"/>
+        <Button Content="9" HorizontalAlignment="Center" Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" Height="62" Width="200"/>
+        <Button Content="6" HorizontalAlignment="Center" Grid.Row="4" Grid.Column="2" VerticalAlignment="Center" Height="62" Width="200"/>
+        <Button Content="3" HorizontalAlignment="Center" Grid.Row="5" Grid.Column="2" VerticalAlignment="Center" Height="62" Width="200"/>
+        <Button Content="," HorizontalAlignment="Center" Grid.Row="6" Grid.Column="2" VerticalAlignment="Center" Height="62" Width="200"/>
+        <Button Content="Erase" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="3" VerticalAlignment="Center" Height="62" Width="200"/>
+        <Button Content="/" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="3" VerticalAlignment="Center" Height="62" Width="200"/>
+        <Button Content="*" HorizontalAlignment="Center" Grid.Row="3" Grid.Column="3" VerticalAlignment="Center" Height="62" Width="200"/>
+        <Button Content="-" HorizontalAlignment="Center" Grid.Row="4" Grid.Column="3" VerticalAlignment="Center" Height="62" Width="200"/>
+        <Button Content="+" HorizontalAlignment="Center" Grid.Row="5" Grid.Column="3" VerticalAlignment="Center" Height="62" Width="200"/>
+        <Button Content="=" HorizontalAlignment="Center" Grid.Row="6" Grid.Column="3" VerticalAlignment="Center" Height="62" Width="200"/>
     </Grid>
 </Window>
